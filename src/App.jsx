@@ -1,5 +1,6 @@
 // src/App.jsx
-import DayWeather from "./components/WeatherForecast/WeatherForecast";
+import WeatherData from "./components/WeatherForecast/WeatherForecast";
+import WeatherIcon from "./components/WeatherIcon/WeatherIcon";
 
 const weatherForecasts = [
   {
@@ -47,7 +48,7 @@ const App = () => {
   <h1>Local Weather</h1>
   <section>
     {weatherForecasts.map((weatherForecast) => (
-      <DayWeather key={weatherForecast.day} {...weatherForecast}/>
+      <WeatherData key={weatherForecast.day} {...weatherForecast}/>
     ))}
   </section>
 </>

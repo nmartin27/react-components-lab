@@ -1,6 +1,6 @@
 import "./WeatherForecast.css";
 
-const DayWeather = (props) => {
+const WeatherData = (props) => {
   const { day, conditions, time, img, imgAlt } = props;
   return (
     <div className="weather">
@@ -16,4 +16,4 @@ const DayWeather = (props) => {
   );
 };
 
-export default DayWeather;
+export default WeatherData;
